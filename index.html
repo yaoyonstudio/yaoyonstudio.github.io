@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
   <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="./js/app.js" defer></script>
 </head>
 
 <body>
   <h1>Hi!!!</h1>
 
-  <div x-data="{ open: false }">
+  <div x-cloak x-data="{ open: false }">
     <button @click="open = true">Expand</button>
  
     <span x-show="open">
